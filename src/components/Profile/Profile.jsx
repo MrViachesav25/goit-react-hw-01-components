@@ -1,9 +1,8 @@
-import user from '../../user.json';
+
 import { Container, Avatar, Name, UserTag, Location, List, ListItem, StatContainer, StatTitle, StatValue} from './Profile.styled';
 import PropTypes from 'prop-types';
 
-export const Profile = () => {
-  const { avatar, username, tag, location, stats } = user;
+export const Profile = ({avatar, username, tag, location, stats }) => {
   return (
   <Container> 
     <div>
@@ -39,7 +38,6 @@ export const Profile = () => {
 };
 
 Profile.propTypes = {
-  user: PropTypes.shape({
     avatar: PropTypes.string.isRequired,
     username: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
@@ -49,5 +47,4 @@ Profile.propTypes = {
       views: PropTypes.number.isRequired,
       likes: PropTypes.number.isRequired,
     }).isRequired,
-  }).isRequired,
 };

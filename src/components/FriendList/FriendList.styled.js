@@ -8,7 +8,7 @@ export const FriendContainer = styled.div`
  margin: 0 auto;
 `;
 
-export const FriendItem = styled.li`
+export const FriendListItem = styled.li`
  display: flex;
  align-items: center;
  justify-content: center;
