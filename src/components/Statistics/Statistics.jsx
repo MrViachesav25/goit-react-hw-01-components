@@ -4,7 +4,7 @@ import { Container, StatTitle, StatList, StatItem, StatLabel, StatPercentage, St
 export const Statistics = ({title, stats}) => {
     return (
         <Container>
-            <StatTitle>{title}</StatTitle>
+            {title && <StatTitle>{title}</StatTitle>}
             <StatList>
                 {stats.map(item => (
                     <StatItem key = {item.id}>

@@ -1,14 +1,17 @@
 import styled from 'styled-components';
 
-export const FriendContainer = styled.div`
+export const FriendContainer = styled.ul`
  display: flex;
  width: 100%;
  height: 150px;
  gap: 8px;
  margin: 0 auto;
 `;
+// export const List = styled.ul`
+//  margin: 20px;
+// `;
 
-export const FriendListItem = styled.li`
+export const FriendItem = styled.li`
  display: flex;
  align-items: center;
  justify-content: center;
